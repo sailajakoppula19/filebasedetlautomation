@@ -1,0 +1,15 @@
+{
+	"name": "adfstudio54",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "abdbb8aa-44f2-4d2f-a343-e5d14b53099b",
+		"tenantId": "4900e606-503e-4582-8840-3635c1bea7b0"
+	}
+}

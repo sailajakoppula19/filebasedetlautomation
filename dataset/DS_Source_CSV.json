@@ -1,0 +1,39 @@
+{
+	"name": "DS_Source_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"PFoldername": {
+				"type": "string"
+			},
+			"pFilename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().pFilename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().PFoldername",
+					"type": "Expression"
+				},
+				"fileSystem": "etlcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
