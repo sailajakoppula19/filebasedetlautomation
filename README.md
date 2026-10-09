@@ -9,7 +9,6 @@ The pipeline dynamically identifies files, loads data into staging tables, perfo
 - Azure Data Factory (ADF)
 - Azure Data Lake Storage Gen2
 - Azure SQL Database
-- SQL / T-SQL
 - Stored Procedures
 - Schedule Triggers
 
